@@ -102,7 +102,7 @@ export default class Profile extends Component {
             onPress={this.onSkipPress.bind(this)}
             color={MKColor.White}
             borderRadius={20}
-            style={{width:"40%"}}
+            style={{width:"40%",height: 40}}
             >
             <Text style={{fontSize: 18,textAlign: 'center',color:"white",padding: 5, fontFamily: 'Avenir', fontWeight:'bold'}}>
                 Skip
@@ -113,7 +113,7 @@ export default class Profile extends Component {
             color={MKColor.White}
             borderRadius={20}
             onPress={this.onNextPress.bind(this)}
-            style={{width:"40%"}}
+            style={{width:"40%", height: 40}}
             >
             <Text style={{fontSize: 18,textAlign: 'center',color:"white",padding: 5, fontFamily: 'Avenir', fontWeight:'bold'}}>
                 Next
@@ -161,7 +161,7 @@ buttonsStyle:{
   flexDirection: 'row',
   alignItems: 'center',
   justifyContent: 'space-between',
-  marginTop: 30
+  marginTop: 50
 
 },
 });

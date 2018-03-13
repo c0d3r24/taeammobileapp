@@ -6,17 +6,25 @@ import React, { Component } from 'react';
 import {
   StyleSheet,
   Text,
-  View
+  View,
+  Button
 } from 'react-native';
-export default class Home extends Component {
-  render() {
-    return(
-        <View style={styles.container}>
-            <Text> This is Home</Text>
-        </View>
-    ) ;
+import DetailView from './DetailView';
+import ListView  from './ListView';
+
+import {StackNavigator} from 'react-navigation';
+export default Home  = StackNavigator({
+  List: {
+    screen: ListView
+  },
+  Details: {
+    screen: DetailView
   }
-}
+}); 
+
+
+
+
 
 const styles = StyleSheet.create({
   container: {
